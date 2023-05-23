@@ -1,0 +1,6 @@
+#!/bin/bash
+#
+docker run --name esp32dev --rm -it -v $PWD:/project -w /project \
+    --device /dev/ttyUSB0 \
+    espressif/idf:release-v5.1
+
